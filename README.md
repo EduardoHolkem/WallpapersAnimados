@@ -2,9 +2,9 @@
 
 > Uma coleção de wallpapers dinâmicos e interativos construídos com tecnologias web. Leves, performáticos e totalmente compatíveis com **Wallpaper Engine**, **Lively Wallpaper** e navegadores modernos.
 
-![License](https://img.shields.io/github/license/EduardoHolkem/WallpaperAnimados?style=flat-square)
-![Stars](https://img.shields.io/github/stars/EduardoHolkem/WallpaperAnimados?style=flat-square)
-![Issues](https://img.shields.io/github/issues/EduardoHolkem/WallpaperAnimados?style=flat-square)
+![License](https://img.shields.io/github/license/EduardoHolkem/WallpapersAnimados?style=flat-square)
+![Stars](https://img.shields.io/github/stars/EduardoHolkem/WallpapersAnimados?style=flat-square)
+![Issues](https://img.shields.io/github/issues/EduardoHolkem/WallpapersAnimados?style=flat-square)
 
 ---
 
