@@ -20,14 +20,8 @@ Utilizando **HTML5 Canvas**, **CSS3** e **JavaScript puro**, os wallpapers são 
 
 Aqui estão as criações disponíveis no repositório:
 
-### 🐺 Jon Snow - Winter is Coming
-Um ambiente gélido e imersivo inspirado em Game of Thrones.
-- **Destaques:** Neve com efeito Parallax (camadas de profundidade), animação de respiração orgânica no personagem e relógio digital minimalista.
-- **Estilo:** Atmosférico / Dark.
-- **Pasta:** `/Jon-Snow/`
-- **Preview:** ![Jon Snow Preview](Jon-Snow/preview.jpg)
-
-*(Para adicionar novos wallpapers, basta criar uma nova seção aqui)*
+### 🐺 Jon Snow Wallpaper
+![Minha animação legal](WallpaperJonSnow.gif)   
 
 ---
 
