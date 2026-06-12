@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wallpaper - Jon Snow & Dragon</title>
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    html,body{height:100%}
+    body{
+      width:100vw;height:100vh;overflow:hidden;
+      background:#ffffff; color:#111; font-family:Inter, Arial, sans-serif;
+    }
+
+    .wallpaper{position:relative;width:100%;height:100%;overflow:hidden}
+
+    /* Fundo escuro dramático */
+    .bg{
+      position:absolute;inset:0;
+      background: #f0f0f0;
+      z-index:1;
+    }
+    .bg::after{
+      content:'';
+      position:absolute;inset:0;
+      pointer-events:none;
+      background: radial-gradient(ellipse at center, rgba(0,0,0,0) 50%, rgba(0,0,0,0.25) 100%);
+    }
+
+    /* Brilho azulado atrás do Jon */
+    .glow-back{
+      position:absolute;
+      top:50%;left:50%;
+      width:600px;height:600px;
+      transform:translate(-50%,-50%);
+      background: radial-gradient(circle, rgba(80,140,200,0.25) 0%, transparent 60%);
+      filter:blur(40px);
+      z-index:2;
+      animation: glow-pulse 5s ease-in-out infinite;
+    }
+
+    @keyframes glow-pulse{
+      0%,100%{opacity:0.6; transform:translate(-50%,-50%) scale(1);}
+      50%{opacity:1; transform:translate(-50%,-50%) scale(1.1);}
+    }
+
+    /* ===== CANVAS NEVE ===== */
+    #snow-canvas{
+      position:absolute;inset:0;
+      z-index:8;
+      pointer-events:none;
+    }
+
+    /* Relógio */
+    .person{
+      position:absolute;
+      bottom:-20px;
+      left:50%;
+      transform:translateX(-50%);
+      height:88vh;
+      max-height:950px;
+      z-index:5;
+      animation: breathe-gentle 6s ease-in-out infinite;
+    }
+
+    @keyframes breathe-gentle{
+      0%,100%{transform:translateX(-50%) scale(1)}
+      50%{transform:translateX(-50%) scale(1.008)}
+    }
+
+    /* ===== NÉVOA ===== */
+    .fog{
+      position:absolute;left:0;bottom:0;
+      width:100%;height:30vh;
+      pointer-events:none;
+      z-index:6;
+      background:transparent;
+      filter:blur(30px);
+      animation: fog-drift 12s linear infinite;
+    }
+
+    @keyframes fog-drift{
+      0%{transform:translateX(-5%)}
+      50%{transform:translateX(5%)}
+      100%{transform:translateX(-5%)}
+    }
+
+    /* ===== NEVE NA FRENTE DO JON ===== */
+    .snow-front{
+      position:absolute;inset:0;
+      pointer-events:none;
+      z-index:10;
+      overflow:hidden;
+    }
+
+    /* Relógio */
+    .clock{position:absolute;top:18px;left:18px;z-index:12;color:#fff;text-shadow:0 0 10px rgba(0,0,0,0.7)}
+    .clock .time{font-size:24px;font-weight:300;letter-spacing:2px}
+    .clock .date{font-size:11px;opacity:0.8;margin-top:4px;letter-spacing:1px}
+  </style>
+</head>
+<body>
+  <div class="wallpaper">
+    <div class="bg"></div>
+    <div class="glow-back"></div>
+
+    <!-- Canvas neve -->
+    <canvas id="snow-canvas"></canvas>
+
+    <!-- Jon Snow centralizado 90px abaixo -->
+    <img src="JonSnow.png" alt="Jon Snow" class="person" id="person">
+
+    <!-- Neve na frente do Jon (camada visual) -->
+    <div class="snow-front" id="snow-front"></div>
+
+    <!-- Relógio -->
+    <div class="clock">
+      <div class="time"><span id="hour">00</span>:<span id="minute">00</span>:<span id="second">00</span></div>
+      <div class="date"><span id="day">01</span> <span id="month">January</span> <span id="year">1970</span></div>
+    </div>
+  </div>
+
+  <script>
+    // Relógio
+    const months=["January","February","March","April","May","June","July","August","September","October","November","December"];
+    function updateClock(){
+      const now=new Date();
+      document.getElementById('hour').textContent=String(now.getHours()).padStart(2,'0');
+      document.getElementById('minute').textContent=String(now.getMinutes()).padStart(2,'0');
+      document.getElementById('second').textContent=String(now.getSeconds()).padStart(2,'0');
+      document.getElementById('day').textContent=now.getDate();
+      document.getElementById('month').textContent=months[now.getMonth()];
+      document.getElementById('year').textContent=now.getFullYear();
+    }
+    setInterval(updateClock,1000);updateClock();
+
+    // Canvas Snow System
+    const canvas=document.getElementById('snow-canvas');
+    const ctx=canvas.getContext('2d');
+    let width, height, snowflakes=[];
+
+    function init(){
+      width=window.innerWidth;
+      height=window.innerHeight;
+      canvas.width=width;
+      canvas.height=height;
+      snowflakes=[];
+      for(let i=0;i<100;i++){
+        snowflakes.push(new Snowflake());
+      }
+    }
+
+    class Snowflake{
+      constructor(){
+        this.reset();
+      }
+      reset(){
+        this.x=Math.random()*width;
+        this.y=Math.random()*height;
+        this.radius=Math.random()*3+1;
+        this.speed=Math.random()*1.5+0.5;
+        this.wind=Math.random()*0.8-0.4;
+        this.opacity=Math.random()*0.6+0.3;
+      }
+      update(){
+        this.y+=this.speed;
+        this.x+=this.wind;
+        if(this.y>height){
+          this.y=-10;
+          this.x=Math.random()*width;
+        }
+      }
+      draw(){
+        ctx.beginPath();
+        ctx.arc(this.x,this.y,this.radius,0,Math.PI*2);
+        ctx.fillStyle=`rgba(255,255,255,${this.opacity})`;
+        ctx.fill();
+      }
+    }
+
+    function animate(){
+      ctx.clearRect(0,0,width,height);
+      snowflakes.forEach(flake=>{
+        flake.update();
+        flake.draw();
+      });
+      requestAnimationFrame(animate);
+    }
+
+    window.addEventListener('resize',init);
+    init();
+    animate();
+  </script>
+</body>
+</html>
