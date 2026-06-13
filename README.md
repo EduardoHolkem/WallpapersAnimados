@@ -6,7 +6,7 @@
 ![Stars](https://img.shields.io/github/stars/EduardoHolkem/WallpapersAnimados?style=flat-square)
 ![Issues](https://img.shields.io/github/issues/EduardoHolkem/WallpapersAnimados?style=flat-square)
 
----
+</br>
 
 ## 📖 Sobre o Projeto
 
@@ -14,7 +14,7 @@ Este repositório é um laboratório de experimentação visual. O objetivo é c
 
 Utilizando **HTML5 Canvas**, **CSS3** e **JavaScript puro**, os wallpapers são otimizados para consumir o mínimo de CPU/GPU possível, mantendo a fluidez de 60fps e a alta resolução.
 
----
+</br>
 
 ## 🖼️ Galeria de Wallpapers
 
@@ -23,7 +23,7 @@ Aqui estão as criações disponíveis no repositório:
 ### 🐺 Jon Snow Wallpaper
 ![Minha animação legal](WallpaperJonSnow.gif)   
 
----
+</br>
 
 ## 🚀 Como Instalar e Usar
 
@@ -43,7 +43,7 @@ Todos os projetos seguem o mesmo padrão de instalação:
 ### 🌐 No Navegador
 Basta abrir o arquivo `.html` de qualquer wallpaper em seu navegador favorito para visualizar em tela cheia.
 
----
+</br>
 
 ## 🛠️ Stack Técnica
 
@@ -54,7 +54,7 @@ Para garantir que os wallpapers sejam leves e compatíveis com qualquer sistema,
 - **Vanilla JavaScript:** Lógica pura, sem dependências ou frameworks pesados, garantindo carregamento instantâneo.
 - **Responsive Design:** Todos os wallpapers se ajustam automaticamente a resoluções Full HD, 4K e UltraWide.
 
----
+</br></br>
 
 ## 📁 Organização do Repositório
 
@@ -66,20 +66,16 @@ Wallpaper-Animados/
 └── README.md
 
 ```
+</br>
+
 ## 🤝 Contribuindo
 
 Tem uma ideia de wallpaper? Abre uma issue ou manda um pull request, quanto mais efeitos, melhor.
-
----
- 
+</br>
 ## 🙏 Créditos
  
 O wallpaper Starfield foi desenvolvido em colaboração com o [Claude](https://claude.ai) (Anthropic), que auxiliou na arquitetura dos efeitos e na implementação do código.
 
----
+</br>
 
-## 📄 Licença
- 
-[MIT](LICENSE), use, modifique e distribua à vontade.
- 
----
+## 📄 Licença [MIT](LICENSE), use, modifique e distribua à vontade.
