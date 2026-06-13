@@ -74,7 +74,7 @@ Tem uma ideia de wallpaper? Abre uma issue ou manda um pull request, quanto mais
 </br>
 ## 🙏 Créditos
  
-O wallpaper Starfield foi desenvolvido em colaboração com o [Claude](https://claude.ai) (Anthropic), que auxiliou na arquitetura dos efeitos e na implementação do código.
+O Jon Snow Wallpaper foi desenvolvido em colaboração com o [Claude](https://claude.ai) (Anthropic), que auxiliou na arquitetura dos efeitos e na implementação do código.
 
 </br>
 
