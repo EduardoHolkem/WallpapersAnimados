@@ -1,4 +1,4 @@
-# 🌌 Wallpaper Animados
+# Wallpaper Animados
 
 > Uma coleção de wallpapers dinâmicos e interativos construídos com tecnologias web. Leves, performáticos e totalmente compatíveis com **Wallpaper Engine**, **Lively Wallpaper** e navegadores modernos.
 
@@ -8,7 +8,7 @@
 
 </br>
 
-## 📖 Sobre o Projeto
+## Sobre o Projeto
 
 Este repositório é um laboratório de experimentação visual. O objetivo é criar fundos de tela que não sejam apenas vídeos em loop, mas **experiências renderizadas em tempo real** via código.
 
@@ -16,7 +16,7 @@ Utilizando **HTML5 Canvas**, **CSS3** e **JavaScript puro**, os wallpapers são 
 
 </br>
 
-## 🖼️ Galeria de Wallpapers
+## Galeria de Wallpapers
 
 Aqui estão as criações disponíveis no repositório:
 
@@ -25,27 +25,27 @@ Aqui estão as criações disponíveis no repositório:
 
 </br>
 
-## 🚀 Como Instalar e Usar
+## Como Instalar e Usar
 
 Todos os projetos seguem o mesmo padrão de instalação:
 
-### ⚙️ No Wallpaper Engine (Recomendado)
+### No Wallpaper Engine (Recomendado)
 1. Abra o **Wallpaper Engine**.
 2. Clique em **"Criar wallpaper"** $\rightarrow$ Selecione **"Web"**.
 3. Navegue até a pasta do wallpaper escolhido e selecione o arquivo `index.html` (ou `project.json`).
 4. Aplique e aproveite.
 
-### 🌈 No Lively Wallpaper (Open Source)
+### No Lively Wallpaper (Open Source)
 1. Abra o **Lively Wallpaper**.
 2. Arraste a pasta do wallpaper escolhido para dentro da biblioteca do programa.
 3. Defina-o como seu fundo de tela ativo.
 
-### 🌐 No Navegador
+### No Navegador
 Basta abrir o arquivo `.html` de qualquer wallpaper em seu navegador favorito para visualizar em tela cheia.
 
 </br>
 
-## 🛠️ Stack Técnica
+## Stack Técnica
 
 Para garantir que os wallpapers sejam leves e compatíveis com qualquer sistema, utilizo:
 
@@ -56,7 +56,7 @@ Para garantir que os wallpapers sejam leves e compatíveis com qualquer sistema,
 
 </br></br>
 
-## 📁 Organização do Repositório
+## Organização do Repositório
 
 ```text
 Wallpaper-Animados/
@@ -68,14 +68,14 @@ Wallpaper-Animados/
 ```
 </br>
 
-## 🤝 Contribuindo
+## Contribuindo
 
 Tem uma ideia de wallpaper? Abre uma issue ou manda um pull request, quanto mais efeitos, melhor.
 </br>
-## 🙏 Créditos
+## Créditos
  
 O Jon Snow Wallpaper foi desenvolvido em colaboração com o [Claude](https://claude.ai) (Anthropic), que auxiliou na arquitetura dos efeitos e na implementação do código.
 
 </br>
 
-## 📄 Licença [MIT](LICENSE), use, modifique e distribua à vontade.
+## Licença [MIT](LICENSE), use, modifique e distribua à vontade.
