@@ -2,7 +2,7 @@
 
 > Meu primeiro projeto de wallpaper animado interativo inspirado em universos épicos de fantasia, desenvolvido em HTML, CSS e JavaScript.
 
-![Preview](./preview.jpg)
+![Preview](./WallpaperJonSnow.gif)
 
 ## 🌌 Sobre o projeto
 
